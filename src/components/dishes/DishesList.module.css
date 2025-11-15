@@ -1,0 +1,11 @@
+@import "tailwindcss";
+.container{
+background: -webkit-linear-gradient(90deg, #f0e0e9,#e9d3d5,#e0c7dc);background: linear-gradient(90deg, #f0e0e9,#e9d3d5,#e0c7dc);
+margin-top:40px;
+}
+.img{
+    width: 30%;
+}
+.inf{
+    width:70%;
+}

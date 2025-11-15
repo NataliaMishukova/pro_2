@@ -1,0 +1,78 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.img {
+  width: 60%;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* Светлая тема */
+.light {
+  background-color: #f9f9f9;
+  color: #ff0303;
+}
+
+/* Темная тема */
+.dark {
+  background-color: #333333;
+  color: #000000;
+}
+
+.themeToggle {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  font-size: 16px;
+  color: blue;
+}
+img {
+  width: 100%;
+}
+
+p {
+  font-size: larger;
+  font-weight: bold;
+}
+.btn1 {
+  background-color: #f15bb5;
+}
+
+.btn2 {
+  background-color: #fee440;
+}
+
+.btn3 {
+  background-color: #9b5de5;
+}
+
+.btn4 {
+  background-color: #00bbf9;
+}
+.btn5 {
+  background-color: #00f5d4;
+}
+
+/* Адаптивность 
+@media (max-width: 480px) {
+  .container {
+    padding: 24px;
+    width: 300px;
+  }
+  .img {
+    width: 100%;
+  }
+}
+*/
