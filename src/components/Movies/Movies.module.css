@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+}
+
+.image {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+/* Вот что добавляем: */
+.card:hover .image {
+  opacity: 0.5;
+}
+
+.card .desc {
+  display: block; /* важно — иначе transition не сработает */
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .desc {
+  max-height: 200px; /* можно увеличить, если текста больше */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .icons {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.card:hover .icons {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
