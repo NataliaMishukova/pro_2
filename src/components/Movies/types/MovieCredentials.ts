@@ -3,5 +3,5 @@ export default interface MovieCredentials {
   genre: string;
   country: string;
   releaseDate: string;
-   image:string
+  image: string;
 }
